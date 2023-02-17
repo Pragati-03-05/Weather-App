@@ -1,0 +1,73 @@
+* {
+  color: white;
+}
+h1,
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.weather {
+  height: 80vh;
+  width: 80vw;
+  border: 2px solid rgb(49, 143, 197);
+  background-color: rgb(17, 67, 110);
+}
+.searchBox {
+  position: relative;
+  height: 20vh;
+}
+.searchBox h4 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.weatherBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.windBox {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cloud {
+  animation: 3s rotateRight infinite linear;
+  width: 50px;
+}
+@keyframes rotateRight {
+  100% {
+    transform: translateX(7px);
+  }
+}
+input {
+  color: black;
+}
+
+.rotates {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.rotates div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sun {
+  animation: 10s rotateFull infinite linear;
+}
+@keyframes rotateFull {
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
